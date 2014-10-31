@@ -1,0 +1,606 @@
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8000][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 20]
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8000
+DEBUG main org.apache.http.conn.HttpClientConnectionManager - Connecting to localhost/127.0.0.1:8000
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Executing request GET / HTTP/1.1
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.headers - http-outgoing-0 >> GET / HTTP/1.1
+DEBUG main org.apache.http.headers - http-outgoing-0 >> Host: localhost:8000
+DEBUG main org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.3 (java 1.5)
+DEBUG main org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "Host: localhost:8000[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.3 (java 1.5)[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "Content-length: 3[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "aok"
+DEBUG main org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - http-outgoing-0 << Content-length: 3
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://localhost:8000] can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:8000][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 20]
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: best-match
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8000][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 20]
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8000][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 20]
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Stale connection check
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Executing request GET / HTTP/1.1
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.headers - http-outgoing-0 >> GET / HTTP/1.1
+DEBUG main org.apache.http.headers - http-outgoing-0 >> Host: localhost:8000
+DEBUG main org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.3 (java 1.5)
+DEBUG main org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "Host: localhost:8000[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.3 (java 1.5)[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "Content-length: 3[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+DEBUG main org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - http-outgoing-0 << Content-length: 3
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire - http-outgoing-0 << "aok"
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://localhost:8000] can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:8000][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 20]
+INFO main org.springframework.context.annotation.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@f5db314: startup date [Thu Oct 30 23:22:03 PDT 2014]; root of context hierarchy
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@47ad6b4b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,appConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,htmlDownloader,httpClientFactoryBean,propertySourcesPlaceholderConfigurer]; root of factory hierarchy
+DEBUG main org.springframework.beans.factory.support.DisposableBeanAdapter - Invoking destroy() on bean with name 'httpClientFactoryBean'
+INFO main spring.HttpClientFactoryBean - closing http client
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+DEBUG main org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
+DEBUG main org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+DEBUG main org.springframework.beans.factory.support.DisposableBeanAdapter - Invoking destroy() on bean with name 'appConfig'
+DEBUG main org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+INFO main org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5097eded: startup date [Thu Oct 30 23:27:09 PDT 2014]; root of context hierarchy
+DEBUG main org.springframework.context.annotation.AnnotationConfigApplicationContext - Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@5097eded: org.springframework.beans.factory.support.DefaultListableBeanFactory@2eb0a3f5: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,appConfig]; root of factory hierarchy
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/Users/danny/Desktop/http-client-test/target/classes/spring]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/Users/danny/Desktop/http-client-test/target/classes/spring] for files matching pattern [/Users/danny/Desktop/http-client-test/target/classes/spring/**/*.class]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:spring/**/*.class] to resources [file [/Users/danny/Desktop/http-client-test/target/classes/spring/App$ExecThread.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/App.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/AppConfig.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/HtmlDownloader.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/HttpClientFactoryBean.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/IdleConnectionMonitorThread.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/MockHttpServer$1.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/MockHttpServer.class]]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/danny/Desktop/http-client-test/target/classes/spring/AppConfig.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/danny/Desktop/http-client-test/target/classes/spring/HtmlDownloader.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/danny/Desktop/http-client-test/target/classes/spring/HttpClientFactoryBean.class]
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [class path resource [app.properties]] PropertySource with lowest search precedence
+DEBUG main org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method spring.AppConfig.propertySourcesPlaceholderConfigurer()
+DEBUG main org.springframework.context.annotation.ConfigurationClassEnhancer - Successfully enhanced spring.AppConfig; enhanced class name is: spring.AppConfig$$EnhancerByCGLIB$$a0a9311f
+DEBUG main org.springframework.context.annotation.ConfigurationClassPostProcessor - Replacing bean definition 'appConfig' existing class name 'spring.AppConfig' with enhanced class name 'spring.AppConfig$$EnhancerByCGLIB$$a0a9311f'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'propertySourcesPlaceholderConfigurer'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'propertySourcesPlaceholderConfigurer' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'propertySourcesPlaceholderConfigurer'
+DEBUG main org.springframework.core.env.MutablePropertySources - Adding [environmentProperties] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.MutablePropertySources - Adding [localProperties] PropertySource with lowest search precedence
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.context.annotation.AnnotationConfigApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@5bf9e31e]
+DEBUG main org.springframework.context.annotation.AnnotationConfigApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@5b0d95cd]
+INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2eb0a3f5: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,appConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,htmlDownloader,httpClientFactoryBean,propertySourcesPlaceholderConfigurer]; root of factory hierarchy
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'appConfig'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'appConfig'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [spring.AppConfig$$EnhancerByCGLIB$$a0a9311f]: AutowiredFieldElement for org.springframework.core.env.Environment spring.AppConfig.env
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'appConfig' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'appConfig': AutowiredFieldElement for org.springframework.core.env.Environment spring.AppConfig.env
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'environment'
+DEBUG main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'appConfig' to bean named 'environment'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'appConfig'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'htmlDownloader'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'htmlDownloader'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [spring.HtmlDownloader]: AutowiredFieldElement for org.apache.http.impl.client.CloseableHttpClient spring.HtmlDownloader.httpClient
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'htmlDownloader' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'htmlDownloader': AutowiredFieldElement for org.apache.http.impl.client.CloseableHttpClient spring.HtmlDownloader.httpClient
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'httpClientFactoryBean'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'httpClientFactoryBean'
+DEBUG main org.springframework.context.annotation.CommonAnnotationBeanPostProcessor - Found init method on class [spring.HttpClientFactoryBean]: public void spring.HttpClientFactoryBean.init()
+DEBUG main org.springframework.context.annotation.CommonAnnotationBeanPostProcessor - Registered init method on class [spring.HttpClientFactoryBean]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@316510
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [spring.HttpClientFactoryBean]: AutowiredFieldElement for java.lang.String spring.HttpClientFactoryBean.proxyHost
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [spring.HttpClientFactoryBean]: AutowiredFieldElement for java.lang.String spring.HttpClientFactoryBean.proxyPort
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'httpClientFactoryBean' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'httpClientFactoryBean': AutowiredFieldElement for java.lang.String spring.HttpClientFactoryBean.proxyHost
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.host' in [environmentProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.host' in [systemProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.host' in [systemEnvironment]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.host' in [class path resource [app.properties]]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'proxy.host' in [class path resource [app.properties]] with type [String] and value ''
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'proxy.host' in [environmentProperties] with type [String] and value ''
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'httpClientFactoryBean': AutowiredFieldElement for java.lang.String spring.HttpClientFactoryBean.proxyPort
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.port' in [environmentProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.port' in [systemProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.port' in [systemEnvironment]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.port' in [class path resource [app.properties]]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'proxy.port' in [class path resource [app.properties]] with type [String] and value ''
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'proxy.port' in [environmentProperties] with type [String] and value ''
+DEBUG main org.springframework.context.annotation.CommonAnnotationBeanPostProcessor - Invoking init method on bean 'httpClientFactoryBean': public void spring.HttpClientFactoryBean.init()
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'httpClientFactoryBean'
+DEBUG main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'htmlDownloader' to bean named 'httpClientFactoryBean'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'htmlDownloader'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'httpClientFactoryBean'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+DEBUG main org.springframework.context.annotation.AnnotationConfigApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@75088a1b]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [class path resource [app.properties]]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'htmlDownloader'
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: best-match
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8000][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 20]
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8000][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 20]
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8000
+DEBUG main org.apache.http.conn.HttpClientConnectionManager - Connecting to localhost/127.0.0.1:8000
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Executing request GET / HTTP/1.1
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.headers - http-outgoing-0 >> GET / HTTP/1.1
+DEBUG main org.apache.http.headers - http-outgoing-0 >> Host: localhost:8000
+DEBUG main org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.3 (java 1.5)
+DEBUG main org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "Host: localhost:8000[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.3 (java 1.5)[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "Content-length: 3[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+DEBUG main org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - http-outgoing-0 << Content-length: 3
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire - http-outgoing-0 << "aok"
+DEBUG main org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+INFO main org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2937d090: startup date [Thu Oct 30 23:28:33 PDT 2014]; root of context hierarchy
+DEBUG main org.springframework.context.annotation.AnnotationConfigApplicationContext - Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@2937d090: org.springframework.beans.factory.support.DefaultListableBeanFactory@4a5f2db0: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,appConfig]; root of factory hierarchy
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/Users/danny/Desktop/http-client-test/target/classes/spring]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/Users/danny/Desktop/http-client-test/target/classes/spring] for files matching pattern [/Users/danny/Desktop/http-client-test/target/classes/spring/**/*.class]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:spring/**/*.class] to resources [file [/Users/danny/Desktop/http-client-test/target/classes/spring/App$ExecThread.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/App.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/AppConfig.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/HtmlDownloader.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/HttpClientFactoryBean.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/IdleConnectionMonitorThread.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/MockHttpServer$1.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/MockHttpServer.class]]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/danny/Desktop/http-client-test/target/classes/spring/AppConfig.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/danny/Desktop/http-client-test/target/classes/spring/HtmlDownloader.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/danny/Desktop/http-client-test/target/classes/spring/HttpClientFactoryBean.class]
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [class path resource [app.properties]] PropertySource with lowest search precedence
+DEBUG main org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method spring.AppConfig.propertySourcesPlaceholderConfigurer()
+DEBUG main org.springframework.context.annotation.ConfigurationClassEnhancer - Successfully enhanced spring.AppConfig; enhanced class name is: spring.AppConfig$$EnhancerByCGLIB$$a8282976
+DEBUG main org.springframework.context.annotation.ConfigurationClassPostProcessor - Replacing bean definition 'appConfig' existing class name 'spring.AppConfig' with enhanced class name 'spring.AppConfig$$EnhancerByCGLIB$$a8282976'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'propertySourcesPlaceholderConfigurer'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'propertySourcesPlaceholderConfigurer' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'propertySourcesPlaceholderConfigurer'
+DEBUG main org.springframework.core.env.MutablePropertySources - Adding [environmentProperties] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.MutablePropertySources - Adding [localProperties] PropertySource with lowest search precedence
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.context.annotation.AnnotationConfigApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@5fed27e4]
+DEBUG main org.springframework.context.annotation.AnnotationConfigApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@5bf9e31e]
+INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4a5f2db0: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,appConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,htmlDownloader,httpClientFactoryBean,propertySourcesPlaceholderConfigurer]; root of factory hierarchy
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'appConfig'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'appConfig'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [spring.AppConfig$$EnhancerByCGLIB$$a8282976]: AutowiredFieldElement for org.springframework.core.env.Environment spring.AppConfig.env
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'appConfig' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'appConfig': AutowiredFieldElement for org.springframework.core.env.Environment spring.AppConfig.env
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'environment'
+DEBUG main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'appConfig' to bean named 'environment'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'appConfig'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'htmlDownloader'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'htmlDownloader'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [spring.HtmlDownloader]: AutowiredFieldElement for org.apache.http.impl.client.CloseableHttpClient spring.HtmlDownloader.httpClient
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'htmlDownloader' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'htmlDownloader': AutowiredFieldElement for org.apache.http.impl.client.CloseableHttpClient spring.HtmlDownloader.httpClient
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'httpClientFactoryBean'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'httpClientFactoryBean'
+DEBUG main org.springframework.context.annotation.CommonAnnotationBeanPostProcessor - Found init method on class [spring.HttpClientFactoryBean]: public void spring.HttpClientFactoryBean.init()
+DEBUG main org.springframework.context.annotation.CommonAnnotationBeanPostProcessor - Registered init method on class [spring.HttpClientFactoryBean]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@316510
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [spring.HttpClientFactoryBean]: AutowiredFieldElement for java.lang.String spring.HttpClientFactoryBean.proxyHost
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [spring.HttpClientFactoryBean]: AutowiredFieldElement for java.lang.String spring.HttpClientFactoryBean.proxyPort
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'httpClientFactoryBean' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'httpClientFactoryBean': AutowiredFieldElement for java.lang.String spring.HttpClientFactoryBean.proxyHost
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.host' in [environmentProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.host' in [systemProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.host' in [systemEnvironment]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.host' in [class path resource [app.properties]]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'proxy.host' in [class path resource [app.properties]] with type [String] and value ''
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'proxy.host' in [environmentProperties] with type [String] and value ''
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'httpClientFactoryBean': AutowiredFieldElement for java.lang.String spring.HttpClientFactoryBean.proxyPort
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.port' in [environmentProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.port' in [systemProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.port' in [systemEnvironment]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.port' in [class path resource [app.properties]]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'proxy.port' in [class path resource [app.properties]] with type [String] and value ''
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'proxy.port' in [environmentProperties] with type [String] and value ''
+DEBUG main org.springframework.context.annotation.CommonAnnotationBeanPostProcessor - Invoking init method on bean 'httpClientFactoryBean': public void spring.HttpClientFactoryBean.init()
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'httpClientFactoryBean'
+DEBUG main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'htmlDownloader' to bean named 'httpClientFactoryBean'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'htmlDownloader'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'httpClientFactoryBean'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+DEBUG main org.springframework.context.annotation.AnnotationConfigApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@443acc67]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [class path resource [app.properties]]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'htmlDownloader'
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: best-match
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8000][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 20]
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8000][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 20]
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8000
+DEBUG main org.apache.http.conn.HttpClientConnectionManager - Connecting to localhost/127.0.0.1:8000
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Executing request GET / HTTP/1.1
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.headers - http-outgoing-0 >> GET / HTTP/1.1
+DEBUG main org.apache.http.headers - http-outgoing-0 >> Host: localhost:8000
+DEBUG main org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.3 (java 1.5)
+DEBUG main org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "Host: localhost:8000[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.3 (java 1.5)[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "Content-length: 3[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "aok"
+DEBUG main org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - http-outgoing-0 << Content-length: 3
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://localhost:8000] can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:8000][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 20]
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: best-match
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8000][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 20]
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8000][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 20]
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Stale connection check
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Executing request GET / HTTP/1.1
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.headers - http-outgoing-0 >> GET / HTTP/1.1
+DEBUG main org.apache.http.headers - http-outgoing-0 >> Host: localhost:8000
+DEBUG main org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.3 (java 1.5)
+DEBUG main org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "Host: localhost:8000[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.3 (java 1.5)[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "Content-length: 3[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "aok"
+DEBUG main org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - http-outgoing-0 << Content-length: 3
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://localhost:8000] can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:8000][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 20]
+DEBUG main org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+INFO main org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@f5db314: startup date [Thu Oct 30 23:29:04 PDT 2014]; root of context hierarchy
+DEBUG main org.springframework.context.annotation.AnnotationConfigApplicationContext - Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@f5db314: org.springframework.beans.factory.support.DefaultListableBeanFactory@47ad6b4b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,appConfig]; root of factory hierarchy
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/Users/danny/Desktop/http-client-test/target/classes/spring]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/Users/danny/Desktop/http-client-test/target/classes/spring] for files matching pattern [/Users/danny/Desktop/http-client-test/target/classes/spring/**/*.class]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:spring/**/*.class] to resources [file [/Users/danny/Desktop/http-client-test/target/classes/spring/App$ExecThread.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/App.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/AppConfig.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/HtmlDownloader.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/HttpClientFactoryBean.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/IdleConnectionMonitorThread.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/MockHttpServer$1.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/MockHttpServer.class]]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/danny/Desktop/http-client-test/target/classes/spring/AppConfig.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/danny/Desktop/http-client-test/target/classes/spring/HtmlDownloader.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/danny/Desktop/http-client-test/target/classes/spring/HttpClientFactoryBean.class]
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [class path resource [app.properties]] PropertySource with lowest search precedence
+DEBUG main org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method spring.AppConfig.propertySourcesPlaceholderConfigurer()
+DEBUG main org.springframework.context.annotation.ConfigurationClassEnhancer - Successfully enhanced spring.AppConfig; enhanced class name is: spring.AppConfig$$EnhancerByCGLIB$$29c9944c
+DEBUG main org.springframework.context.annotation.ConfigurationClassPostProcessor - Replacing bean definition 'appConfig' existing class name 'spring.AppConfig' with enhanced class name 'spring.AppConfig$$EnhancerByCGLIB$$29c9944c'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'propertySourcesPlaceholderConfigurer'
+INFO main org.springframework.context.annotation.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2937d090: startup date [Thu Oct 30 23:28:33 PDT 2014]; root of context hierarchy
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4a5f2db0: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,appConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,htmlDownloader,httpClientFactoryBean,propertySourcesPlaceholderConfigurer]; root of factory hierarchy
+DEBUG main org.springframework.beans.factory.support.DisposableBeanAdapter - Invoking destroy() on bean with name 'httpClientFactoryBean'
+INFO main spring.HttpClientFactoryBean - closing http client
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+DEBUG main org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
+DEBUG main org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+DEBUG main org.springframework.beans.factory.support.DisposableBeanAdapter - Invoking destroy() on bean with name 'appConfig'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'propertySourcesPlaceholderConfigurer' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'propertySourcesPlaceholderConfigurer'
+DEBUG main org.springframework.core.env.MutablePropertySources - Adding [environmentProperties] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.MutablePropertySources - Adding [localProperties] PropertySource with lowest search precedence
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.context.annotation.AnnotationConfigApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@bc794cc]
+DEBUG main org.springframework.context.annotation.AnnotationConfigApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@731de9b]
+INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@47ad6b4b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,appConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,htmlDownloader,httpClientFactoryBean,propertySourcesPlaceholderConfigurer]; root of factory hierarchy
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'appConfig'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'appConfig'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [spring.AppConfig$$EnhancerByCGLIB$$29c9944c]: AutowiredFieldElement for org.springframework.core.env.Environment spring.AppConfig.env
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'appConfig' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'appConfig': AutowiredFieldElement for org.springframework.core.env.Environment spring.AppConfig.env
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'environment'
+DEBUG main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'appConfig' to bean named 'environment'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'appConfig'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'htmlDownloader'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'htmlDownloader'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [spring.HtmlDownloader]: AutowiredFieldElement for org.apache.http.impl.client.CloseableHttpClient spring.HtmlDownloader.httpClient
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'htmlDownloader' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'htmlDownloader': AutowiredFieldElement for org.apache.http.impl.client.CloseableHttpClient spring.HtmlDownloader.httpClient
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'httpClientFactoryBean'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'httpClientFactoryBean'
+DEBUG main org.springframework.context.annotation.CommonAnnotationBeanPostProcessor - Found init method on class [spring.HttpClientFactoryBean]: public void spring.HttpClientFactoryBean.init()
+DEBUG main org.springframework.context.annotation.CommonAnnotationBeanPostProcessor - Registered init method on class [spring.HttpClientFactoryBean]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@316510
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [spring.HttpClientFactoryBean]: AutowiredFieldElement for java.lang.String spring.HttpClientFactoryBean.proxyHost
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [spring.HttpClientFactoryBean]: AutowiredFieldElement for java.lang.String spring.HttpClientFactoryBean.proxyPort
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'httpClientFactoryBean' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'httpClientFactoryBean': AutowiredFieldElement for java.lang.String spring.HttpClientFactoryBean.proxyHost
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.host' in [environmentProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.host' in [systemProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.host' in [systemEnvironment]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.host' in [class path resource [app.properties]]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'proxy.host' in [class path resource [app.properties]] with type [String] and value ''
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'proxy.host' in [environmentProperties] with type [String] and value ''
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'httpClientFactoryBean': AutowiredFieldElement for java.lang.String spring.HttpClientFactoryBean.proxyPort
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.port' in [environmentProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.port' in [systemProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.port' in [systemEnvironment]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.port' in [class path resource [app.properties]]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'proxy.port' in [class path resource [app.properties]] with type [String] and value ''
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'proxy.port' in [environmentProperties] with type [String] and value ''
+DEBUG main org.springframework.context.annotation.CommonAnnotationBeanPostProcessor - Invoking init method on bean 'httpClientFactoryBean': public void spring.HttpClientFactoryBean.init()
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'httpClientFactoryBean'
+DEBUG main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'htmlDownloader' to bean named 'httpClientFactoryBean'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'htmlDownloader'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'httpClientFactoryBean'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+DEBUG main org.springframework.context.annotation.AnnotationConfigApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@1a3650ed]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [class path resource [app.properties]]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'htmlDownloader'
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: best-match
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8000][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 20]
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8000][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 20]
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8000
+DEBUG main org.apache.http.conn.HttpClientConnectionManager - Connecting to localhost/127.0.0.1:8000
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Executing request GET / HTTP/1.1
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.headers - http-outgoing-0 >> GET / HTTP/1.1
+DEBUG main org.apache.http.headers - http-outgoing-0 >> Host: localhost:8000
+DEBUG main org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.3 (java 1.5)
+DEBUG main org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "Host: localhost:8000[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.3 (java 1.5)[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "Content-length: 3[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+DEBUG main org.apache.http.wire - http-outgoing-0 << "aok"
+DEBUG main org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - http-outgoing-0 << Content-length: 3
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://localhost:8000] can be kept alive indefinitely
+DEBUG main org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+INFO main org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@26858bf1: startup date [Thu Oct 30 23:30:05 PDT 2014]; root of context hierarchy
+DEBUG main org.springframework.context.annotation.AnnotationConfigApplicationContext - Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@26858bf1: org.springframework.beans.factory.support.DefaultListableBeanFactory@2eb0a3f5: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,appConfig]; root of factory hierarchy
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/Users/danny/Desktop/http-client-test/target/classes/spring]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/Users/danny/Desktop/http-client-test/target/classes/spring] for files matching pattern [/Users/danny/Desktop/http-client-test/target/classes/spring/**/*.class]
+DEBUG main org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:spring/**/*.class] to resources [file [/Users/danny/Desktop/http-client-test/target/classes/spring/App$ExecThread.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/App.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/AppConfig.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/HtmlDownloader.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/HttpClientFactoryBean.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/IdleConnectionMonitorThread.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/MockHttpServer$1.class], file [/Users/danny/Desktop/http-client-test/target/classes/spring/MockHttpServer.class]]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/danny/Desktop/http-client-test/target/classes/spring/AppConfig.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/danny/Desktop/http-client-test/target/classes/spring/HtmlDownloader.class]
+DEBUG main org.springframework.context.annotation.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/danny/Desktop/http-client-test/target/classes/spring/HttpClientFactoryBean.class]
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [class path resource [app.properties]] PropertySource with lowest search precedence
+DEBUG main org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method spring.AppConfig.propertySourcesPlaceholderConfigurer()
+DEBUG main org.springframework.context.annotation.ConfigurationClassEnhancer - Successfully enhanced spring.AppConfig; enhanced class name is: spring.AppConfig$$EnhancerByCGLIB$$afbe057d
+DEBUG main org.springframework.context.annotation.ConfigurationClassPostProcessor - Replacing bean definition 'appConfig' existing class name 'spring.AppConfig' with enhanced class name 'spring.AppConfig$$EnhancerByCGLIB$$afbe057d'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'propertySourcesPlaceholderConfigurer'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'propertySourcesPlaceholderConfigurer' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'propertySourcesPlaceholderConfigurer'
+DEBUG main org.springframework.core.env.MutablePropertySources - Adding [environmentProperties] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.MutablePropertySources - Adding [localProperties] PropertySource with lowest search precedence
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.context.annotation.AnnotationConfigApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@2031688f]
+DEBUG main org.springframework.context.annotation.AnnotationConfigApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@5ebbfa5c]
+INFO main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2eb0a3f5: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,appConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,htmlDownloader,httpClientFactoryBean,propertySourcesPlaceholderConfigurer]; root of factory hierarchy
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'appConfig'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'appConfig'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [spring.AppConfig$$EnhancerByCGLIB$$afbe057d]: AutowiredFieldElement for org.springframework.core.env.Environment spring.AppConfig.env
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'appConfig' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'appConfig': AutowiredFieldElement for org.springframework.core.env.Environment spring.AppConfig.env
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'environment'
+DEBUG main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'appConfig' to bean named 'environment'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'appConfig'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'htmlDownloader'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'htmlDownloader'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [spring.HtmlDownloader]: AutowiredFieldElement for org.apache.http.impl.client.CloseableHttpClient spring.HtmlDownloader.httpClient
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'htmlDownloader' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'htmlDownloader': AutowiredFieldElement for org.apache.http.impl.client.CloseableHttpClient spring.HtmlDownloader.httpClient
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'httpClientFactoryBean'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'httpClientFactoryBean'
+DEBUG main org.springframework.context.annotation.CommonAnnotationBeanPostProcessor - Found init method on class [spring.HttpClientFactoryBean]: public void spring.HttpClientFactoryBean.init()
+DEBUG main org.springframework.context.annotation.CommonAnnotationBeanPostProcessor - Registered init method on class [spring.HttpClientFactoryBean]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@316510
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [spring.HttpClientFactoryBean]: AutowiredFieldElement for java.lang.String spring.HttpClientFactoryBean.proxyHost
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [spring.HttpClientFactoryBean]: AutowiredFieldElement for java.lang.String spring.HttpClientFactoryBean.proxyPort
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'httpClientFactoryBean' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'httpClientFactoryBean': AutowiredFieldElement for java.lang.String spring.HttpClientFactoryBean.proxyHost
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.host' in [environmentProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.host' in [systemProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.host' in [systemEnvironment]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.host' in [class path resource [app.properties]]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'proxy.host' in [class path resource [app.properties]] with type [String] and value ''
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'proxy.host' in [environmentProperties] with type [String] and value ''
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected method of bean 'httpClientFactoryBean': AutowiredFieldElement for java.lang.String spring.HttpClientFactoryBean.proxyPort
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.port' in [environmentProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.port' in [systemProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.port' in [systemEnvironment]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'proxy.port' in [class path resource [app.properties]]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'proxy.port' in [class path resource [app.properties]] with type [String] and value ''
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'proxy.port' in [environmentProperties] with type [String] and value ''
+DEBUG main org.springframework.context.annotation.CommonAnnotationBeanPostProcessor - Invoking init method on bean 'httpClientFactoryBean': public void spring.HttpClientFactoryBean.init()
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'httpClientFactoryBean'
+DEBUG main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'htmlDownloader' to bean named 'httpClientFactoryBean'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'htmlDownloader'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'httpClientFactoryBean'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+DEBUG main org.springframework.context.annotation.AnnotationConfigApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@63fb050c]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [class path resource [app.properties]]
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'htmlDownloader'
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: best-match
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8000][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 20]
+DEBUG main org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8000][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 20]
+DEBUG main org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8000
+DEBUG main org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+DEBUG main org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+INFO main org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5097eded: startup date [Thu Oct 30 23:31:40 PDT 2014]; root of context hierarchy
+DEBUG main org.springframework.context.annotation.AnnotationConfigApplicationContext - Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@5097eded: org.springframework.beans.factory.support.DefaultListableBeanFactory@4a5f2db0: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,appConfig]; root of factory hierarchy
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.core.env.StandardEnvironment - Initializing new StandardEnvironment
